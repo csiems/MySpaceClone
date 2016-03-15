@@ -7,89 +7,83 @@
     android:background="@color/colorPrimaryText">
 
 
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/relativeLayout">
+        android:id="@+id/linearLayout">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Tom Hardy"
-            android:id="@+id/textView2"
-            android:layout_centerVertical="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:textColor="@color/colorTextIcons"
-            android:textSize="35sp" />
-    </RelativeLayout>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tom Hardy"
+        android:id="@+id/userName"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp" />
+    </LinearLayout>
 
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@+id/relativeLayout"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/relativeLayout2">
+        android:layout_height="210dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2"
+        android:weightSum="1">
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:id="@+id/imageView2"
-            android:src="@drawable/profile"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/profile"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+            android:layout_weight="0.18"
+            android:layout_marginLeft="20dp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:id="@+id/editText3"
-            android:text="@string/male38_years_hammersmith_london"
-            android:textColor="@color/colorTextIcons"
-            android:textSize="20sp"
-            android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/imageView2"
-            android:layout_toEndOf="@+id/imageView2"
-            android:layout_marginLeft="61dp"
-            android:layout_marginStart="61dp" />
-    </RelativeLayout>
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:text="@string/male38_years_hammersmith_london"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_marginLeft="61dp"
+        android:layout_marginStart="61dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.31" />
+    </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/relativeLayout2"
         android:layout_centerHorizontal="true"
-        android:weightSum="3">
+        android:layout_below="@+id/linearLayout2">
 
         <Button
-            android:layout_width="126dp"
-            android:layout_height="126dp"
-            android:text="Moar Pics!!!"
-            android:id="@+id/morePicsButton"
-            android:layout_weight="1"
-            android:backgroundTint="@color/colorPrimaryLight" />
-
-        <Button
-            android:layout_width="126dp"
-            android:layout_height="126dp"
-            android:text="Tom's Friends"
-            android:id="@+id/friendsButton"
-            android:layout_weight="1"
-            android:backgroundTint="@color/colorPrimaryLight" />
-
-        <Button
-            android:layout_width="126dp"
-            android:layout_height="126dp"
-            android:text="Contact"
-            android:id="@+id/contactButton"
-            android:layout_weight="1"
-            android:backgroundTint="@color/colorPrimaryLight" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Read My Blog"
+            android:id="@+id/button"
+            android:layout_gravity="bottom"
+            android:clickable="false" />
     </LinearLayout>
+
 
 
 </RelativeLayout>
